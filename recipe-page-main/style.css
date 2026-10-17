@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'Young Serif';
+  src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(30, 18%, 87%);
+}
+
+.parent {
+  width: 60%;
+  max-width: 500px;
+  min-width: 200px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 20px;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.child1 h1 {
+  margin-top: 20px;
+  font-family: 'Young Serif', serif;
+  font-size: 32px;
+  color: hsl(24, 5%, 18%);
+}
+
+.child1 p {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: hsl(30, 10%, 34%);
+}
+
+.child2 {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.child2 h3 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(332, 51%, 32%);
+}
+
+.child2 ul {
+  font-size: 14px;
+  color: hsl(30, 10%, 34%);
+  padding-left: 30px;
+}
+
+.child2 ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.child2 ul li {
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
+.child2 ul li:last-child {
+  margin-bottom: 0;
+}
+
+.child3 {
+  border-top: 1px solid hsl(30, 18%, 87%);
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+
+.child3 h3 {
+  margin-bottom: 12px;
+  font-family: 'Young Serif', serif;
+  font-size: 22px;
+  color: hsl(14, 45%, 36%);
+}
+
+.child3 ul {
+  font-size: 14px;
+  color: hsl(30, 10%, 34%);
+  padding-left: 30px;
+}
+
+.child3 ul li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.child3 ul li {
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
+.child3 ul li:last-child {
+  margin-bottom: 0;
+}
+
+.child4 {
+  border-top: 1px solid hsl(30, 18%, 87%);
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+
+.child4 h3 {
+  margin-bottom: 12px;
+  font-family: 'Young Serif', serif;
+  font-size: 22px;
+  color: hsl(14, 45%, 36%);
+}
+
+.child4 ol {
+  font-size: 14px;
+  color: hsl(30, 10%, 34%);
+  padding-left: 30px;
+}
+
+.child4 ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+.child4 ol li {
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
+.child4 ol li:last-child {
+  margin-bottom: 0;
+}
+
+.child5 {
+  border-top: 1px solid hsl(30, 18%, 87%);
+  padding-top: 25px;
+}
+
+.child5 h3 {
+  margin-bottom: 12px;
+  font-family: 'Young Serif', serif;
+  font-size: 22px;
+  color: hsl(14, 45%, 36%);
+}
+
+.child5 p {
+  font-size: 14px;
+  color: hsl(30, 10%, 34%);
+}
+
+.child5 table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 17px;
+}
+
+.child5 table td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 10px 16px;
+  text-align: left;
+  color: hsl(30, 10%, 34%);
+  font-size: 14px;
+}
+
+.child5 table tr:last-child td {
+  border-bottom: none;
+}
+
+.child5 table td.value {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+
+.bold {
+  font-weight: 700;
+  color: hsl(24, 5%, 18%);
+}
+
+.attribution {
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+
+  #container {
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .parent {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .parent > img {
+    border-radius: 0;
+  }
+
+  .child1,
+  .child2,
+  .child3,
+  .child4,
+  .child5 {
+    padding: 20px;
+  }
+}
